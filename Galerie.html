@@ -3,8 +3,22 @@
   <head>
     <meta charset="utf-8">
     <style type="text/css">
-	    #galeriephoto {
-  margin-left:0;
+	  body {
+  background-image: url("https://assets.letemps.ch/sites/default/files/media/2017/12/06/file6xrpbh6lhth112njymb5.jpg");
+  background-size: cover;
+}
+#galeriephoto {
+  float:left;
+padding-right:45px;
+}
+div#tout {
+  display:inline-block;
+margin:25px;
+    padding:25px;
+}
+
+h1 {
+    color:white;
 }
 
 #navigation li a img {
@@ -13,10 +27,9 @@
   border-color: black;
 }
 
-img:hover
-{
-	transform: scale(1.1);
-	transition: .3s ease-in-out;
+img:hover {
+  transform: scale(1.4);
+  transition: .3s ease-in-out;
   filter: grayscale(100%);
 }
 
@@ -26,7 +39,6 @@ img:hover
   margin: 0;
 }
 
-
 #contenu li {
   padding: 0;
   margin: 0;
@@ -34,7 +46,7 @@ img:hover
 
 #photo1 {
   height: 140px;
-  width: 230px;
+  width: 235px;
 }
 
 #photo2 {
@@ -49,23 +61,23 @@ img:hover
   float: left;
 }
 
-#photo1, #photo2 #photo3 {
+#photo1,#photo2 #photo3 {
   position: absolute;
   display: block;
 }
 
-
 #galerievideo {
-  margin-left: 380px;
-  display:inline;
-  
+  float:left;
 }
 
     </style>
+	  
     <title>Galerie</title>
   </head>
 
   <body>
+  <div id="tout">
+    
     <div id="galeriephoto">
       <h1>
         Des photos exclusives
@@ -81,18 +93,18 @@ img:hover
 
     <div id="galerievideo">
       <h1>
-        Johnny fait son cinéma
+        Johnny is not dead
       </h1>
       <div id="video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/XZRjuRoP0l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-	     <p>
+      <p>
       Plus de vidéos dans la <a href="video.HTML">galerie vidéo</a>.
       </p>
-    </div>
+      </div>
 
+    </div>
+</div>
   </body>
 
 
 </html>
-
