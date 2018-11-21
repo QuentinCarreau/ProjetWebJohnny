@@ -1,22 +1,93 @@
 <html>
-<head>
+
+  <head>
     <meta charset="utf-8">
-	<link rel="stylesheet" href="styleGalerie.css"/>
-	<title>Galerie</title>
-</head>
-    
-<body>
-   <div id="galeriephoto">
-   	<div id="contenu">
-   		<ul>
-   			<li><a href="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"><img src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"/></a></li>
-   			<li><a href="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"><img src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"/></a></li>
-    		<li><a href="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"><img src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"/></a></li>
-    	</ul>
+    <style type="text/css">
+	    #galeriephoto {
+  margin-left:0;
+}
+
+#navigation li a img {
+  border-radius: 7px;
+  border-style: solid;
+  border-color: black;
+}
+
+img:hover
+{
+	transform: scale(1.1);
+	transition: .3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+#navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+#contenu li {
+  padding: 0;
+  margin: 0;
+}
+
+#photo1 {
+  height: 140px;
+  width: 230px;
+}
+
+#photo2 {
+  height: 140px;
+  width: 150px;
+  margin-left: 250px;
+}
+
+#photo3 {
+  height: 230px;
+  width: 400px;
+  float: left;
+}
+
+#photo1, #photo2 #photo3 {
+  position: absolute;
+  display: block;
+}
+
+
+#galerievideo {
+  margin-left: 380px;
+  display:inline;
+  
+}
+
+    </style>
+    <title>Galerie</title>
+  </head>
+
+  <body>
+    <div id="galeriephoto">
+      <h1>
+        Des photos exclusives
+      </h1>
+      <div id="navigation">
+        <ul>
+          <li><a href="Images.html"><img id="photo1" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"/></a></li>
+          <li><a href="Images.html"><img id="photo2" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"/></a></li>
+          <li><a href="Images.html"><img id="photo3" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"/></a></li>
+        </ul>
+      </div>
     </div>
-   </div>
-    
-</body>
-    
-    
+
+    <div id="galerievideo">
+      <h1>
+        Johnny fait son cinéma
+      </h1>
+      
+    </div>
+
+  </body>
+
+
 </html>
+
