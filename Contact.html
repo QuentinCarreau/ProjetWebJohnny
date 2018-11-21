@@ -1,33 +1,75 @@
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
+        <style type="text/css">
+                .float-right{
+                    margin-right:75px;
+                    margin-top: 100px;
+                    padding: 20px;
+                    text-align: center;
+                    border: solid 1px grey;
+                    border-radius: 30px;
+                    background-color: rgba(235, 233,233, 0.2);
+
+                }
+                address{
+                    color: aliceblue;
+                }
+                .float-left{
+                    margin-left: 50px;
+                    margin-top: 150px;
+                    text-align: center;
+                }
+                body {
+                    background: url(background.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                h1 {
+                    color: red;
+                }
+
+        </style>
     </head>
 <body>
     
+<form>
     <div class="container">
-        <h1>Contactez-Nous !!</h1><br><br>
-  <div class="raw">
-    <input type="text" class="col-" placeholder="Nom" maxlength="10" required><br><br>
+  <div class="float-right">
+       <h1>Contactez-Nous !!</h1><br><br>
+      
+    <input type="text" class="col-" placeholder="Nom" maxlength="10"  required><br><br><br>
     <div class="col-">
-      <input type="text" class="col-" placeholder="Prenom" maxlength="10" required ><br><br>
+      <input type="text" class="col-" placeholder="Prenom" maxlength="10" required ><br><br><br>
     </div>
     <div class="col-">
-    <input type="email" class="col-" placeholder="Email" required ><br><br>
+    <input type="email" class="col-" placeholder="Email" required ><br><br><br>
     </div>
         <div class="col-">
-     <textarea maxlength="400" placeholder="Votre message : " rows="10"></textarea><br><br>
+     <textarea maxlength="400" placeholder="Votre message : " rows="12"></textarea><br><br>
     </div>
          <div class="col-">
     <input type="submit" class="col-" value="envoyer"><br><br>
     </div>
   </div>
- </div>
-
-  
+        
+     <div class="float-left">
+         <img src="image_preview.png" width="150" height="150"><br><br>
+         <address> Cimetière-Plage de Lorient,<br>
+             97133 Saint-Barthélemy<br> MadameIrma@hautdelà.com </address><br>
+        <a href="https://www.facebook.com/jhofficiel/">
+            <img src="facebook.png"  alt="facebook" width="75" height="75"> </a><br><br>
+         <a href="https://twitter.com/johnnysjh">
+            <img src="Twitter.png" alt="twitter" width="75" height="75"> </a><br><br>
+         <a href="#">
+             <img src="don.png" alt="don" width="400" height="200"></a>
     
+         
+        </div>  
+    
+ </div>
+    </form>
     </body>
 </html>
