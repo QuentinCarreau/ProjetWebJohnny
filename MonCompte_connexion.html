@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <title>Mon Compte</title>
         <style>
-        body {
-    background-image:url(Images/johnny-hallyday-les-jeunes-annees-photo-9.jpg);
+            body {
+    background-image:url(johnny-hallyday-les-jeunes-annees-photo-9.jpg);
 }
 
 #intro {
-    margin: 5px 5px 5px 5px;
+    margin: 5px 5px 10px 5px;
     padding: 10px 10px 10px 10px;    
 }
 
@@ -56,8 +56,8 @@ h2 {
 }
 
 #connexion .col ,#inscription .col {
-    margin : 10px 0px 0px 0px;
-    height: 30px;
+    margin : 10px 0px 0px 130px;
+    height: 50px;
     width: 300px;
     border-radius: 5px;
     border: 2px solid rgba(61, 61, 61);
@@ -71,19 +71,10 @@ h2 {
     box-shadow: 0 0 3px 2px #008098;
 }
 
-#connexion label,#inscription label {
-    margin : 15px 0px 0px 20px;
-    width : 200px;
-    display : block;
-    float : left;
-    font-family:"Courrier monospace";
-    font-size:19px;
-    color: white;
-    font-weight: bold;
-}
-
 ::placeholder {
     color: rgba(189,189,189);
+    padding-left: 10px;
+    font-size:20px;
 }
 
 /* Bouton d'inscription */
@@ -91,7 +82,7 @@ h2 {
 #btn_connexion {
     width:300px;
     height: 35px;
-    margin : 20px 0px 0px 220px;
+    margin : 20px 0px 0px 130px;
     border-radius:6px; 
     border: 2px solid rgba(61, 61, 61);
     font-size: 20px;
@@ -102,9 +93,9 @@ h2 {
 }
 
 #btn_inscription {
-    width:400px;
-    height: 50px;
-    margin : 20px 0px 0px 70px;
+    width: 300px;
+    height: 35px;
+    margin : 20px 0px 0px 130px;
     border-radius:6px; 
     border: 2px solid rgba(61, 61, 61);
     font-size: 20px;
@@ -123,36 +114,34 @@ h2 {
     color:white;
 }
 
-
+#form_connexion p {
+    color:white;
+    font-family: "Courrier monospace";
+    font-size:25px;
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    
+}
 
         </style>
-        
     </head>
     
     <body>
     <div id="conteneur">   
         <div id="intro">
-            <h1>Connexion/Inscription</h1>
-
+            <h1>Connexion / Inscription</h1>
         </div> 
         <div id="connexion">
             <form id="form_connexion">
-                <h2>Connexion</h2>
-                <label for="pseudo">Pseudo</label>
-                <input class="col" id="speudo" type="text" placeholder="ex: beber59" required><br/>
-                <label for="mdp">Mot de passe</label>
-                <input class="col" id="mdp" type="password" placeholder="ex: 12345" required><br/>
+
+                <input class="col" id="pseudo" type="text" placeholder="Pseudo" required><br/>
+                <input class="col" id="mdp" type="password" placeholder="Mot de passe" required><br/>
                 <input id="btn_connexion" type="submit" value="SE CONNECTER" onclick="connexion()">
-            </form> 
-        </div>
-        <div id="espace">
-        </div>
-        <div id="inscription">
-            <form id="form_inscription">
-                <h2>Inscription</h2>
+                <p>- ou -</p>
                 <input type=button id="btn_inscription" onclick="window.location.href='monCompte_inscription.html';" value="S'INSCRIRE" /> 
             </form> 
-        </div>        
+        </div>
+      
     </div>
     </body>
      
