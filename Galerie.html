@@ -4,30 +4,44 @@
     <meta charset="utf-8">
     <style>
       
-      body {
-  background-image: url("https://images.sudouest.fr/2018/03/15/5aa9597e66a4bdb57580a0ed/widescreen/1000x500/ce-jeudi-premier-episode-judiciaire-autour-de-l-heritage-de-johnny-hallyday.jpg");
-  background-size: cover;
+  body {
+    background-image: url("https://images.sudouest.fr/2018/03/15/5aa9597e66a4bdb57580a0ed/widescreen/1000x500/ce-jeudi-premier-episode-judiciaire-autour-de-l-heritage-de-johnny-hallyday.jpg");
+    background-size: cover;
+    
 
 }
+    @font-face {
+    font-family:"RockyRoad";
+    src: url('RockyRoad.otf');
+}
+        
 #titre {
     font-family: "RockyRoad";
     font-weight: lighter;
     text-align: center;
-    
+    font-size: 400%;
+    color: darkgoldenrod;
+ 
 }
 header{
+   
+    margin-top:-42px;
     background-color: black;
-    margin-top: -20px;
-    
+    width:1000px;
+   
 }
 
 #conteneur a {
     color: darkgoldenrod;
     font-size: 80px;
     text-decoration:none;
-    
 }
+        
 
+        
+#menu{
+       text-align:center;
+        }
 
 #menu ul {
     margin:0;
@@ -39,7 +53,6 @@ header{
 #menu li {
     display: inline-block;
     position: relative;
-    background-color:darkgoldenrod;
    
  }
 #menu a {
@@ -53,7 +66,6 @@ header{
     
     color: darkgoldenrod;
     font-family: "RockyRoad";
-    background: black;
  }
 
 nav > ul::after {
@@ -78,18 +90,22 @@ nav > ul::after {
     display: block;
 }
 
+/*CSS MADELINE*/
+
+
 #galeriephoto {
   float:left;
   padding-right:45px;
 }
 div#tout {
   display:inline-block;
-margin:25px;
+
     padding:25px;
 }
 
 h1,p {
-    color:white;
+    color:darkgoldenrod;
+    
 }
 
 #navigation li a img {
@@ -140,6 +156,11 @@ img:hover {
 #galerievideo {
   float:left;
 }
+        
+#lienvideo {
+    color:whitesmoke;
+    text-decoration: none;
+        }
 
       
       </style>
@@ -147,54 +168,63 @@ img:hover {
   </head>
 
   <body>
-       <div id="conteneur">    
-    <h1 id="titre"><a href="page/Accueil.html" title="Le Site des Fans de Johnny Hallyday - Accueil"><span>Johnny Hallyday</span></a></h1>
+    <!-- PARTIE JUSTIN BANDEAU ACCUEIL-->
+      
+    <header>
+    <div id="conteneur">    
+        <h1 id="titre">Johnny Hallyday</h1>
 
-    <nav>
+        <nav>
         <ul id="menu">
-            <li><a href="page/Accueil.html">Accueil</a></li>
-          <li><a href="page/Galerie.html">Galerie</a>
-     
-        <ul id="sousMenu">
-            <li><a href="page/Images.html">Images</a></li>
-            <li><a href="page/Vidéos.html">Vidéos</a></li>
-        </ul> </li>
-       
-            <li><a href="page/Contact.html">Contact</a></li>
-            <li><a href="page/Parole.html">Paroles</a></li>
-            <li><a href="page/Lequipe.html">L'équipe</a></li>
-        </ul>
-    </nav>
-</div>
-  <div id="tout">
-    
-    <div id="galeriephoto">
-      <h1>
-        Des photos exclusives
-      </h1>
-      <div id="navigation">
-        <ul>
-          <li><a href="images.html"><img id="photo1" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"/></a></li>
-          <li><a href="images.html"><img id="photo2" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"/></a></li>
-          <li><a href="images.html"><img id="photo3" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"/></a></li>
-        </ul>
-      </div>
+            <li><a href="./Accueil.html">Accueil</a></li>
+            <li><a href="./Galerie.html">Galerie</a>
+                <ul id="sousMenu">
+                    <li><a href="./Images.html">Images</a></li>
+                    <li><a href="./Videoshtml.html">Videos</a></li>
+                </ul> 
+            </li>
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./Parole.html">Paroles</a></li>
+            <li><a href="./Lequipe.html">L'equipe</a></li>
+                </ul>
+        </nav>
     </div>
+   </header>
+           <!-- PARTIE JUSTIN BANDEAU ACCUEIL-->
+      
+          <!-- PARTIE MADELINE-->
+ 
+    <div id="tout">
+    
+        <div id="galeriephoto">
+            <h1>Des photos exclusives</h1>
+      
+            <div id="navigation">
+                <ul>
+                    <li><a href="./Images.html"><img id="photo1" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"/></a></li>
+                    <li><a href="./Images.html"><img id="photo2" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"/></a></li>
+                    <li><a href="./Images.html"><img id="photo3" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"/></a></li>
+                </ul>
+            </div>
+        </div>
 
     <div id="galerievideo">
-      <h1>
-        Johnny is not dead
-      </h1>
-      <div id="video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/XZRjuRoP0l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>
-      Plus de vidéos dans la <a href="Videoshtml.html">galerie vidéo</a>.
-      </p>
-      </div>
+      <h1>Johnny is not dead</h1>
+      
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XZRjuRoP0l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Plus de vidéos dans la <a id="lienvideo" href="./Videos.html">galerie vidéo</a>.</p>
+      
+        </div>
+
 
     </div>
+
 </div>
-  </body>
+      
+        <!-- PARTIE JUSTIN BANDEAU ACCUEIL-->
+ 
+</body>
 
 
 </html>
