@@ -1,1 +1,200 @@
+<html>
 
+  <head>
+    <meta charset="utf-8">
+    <style>
+      
+      body {
+  background-image: url("https://images.sudouest.fr/2018/03/15/5aa9597e66a4bdb57580a0ed/widescreen/1000x500/ce-jeudi-premier-episode-judiciaire-autour-de-l-heritage-de-johnny-hallyday.jpg");
+  background-size: cover;
+
+}
+#titre {
+    font-family: "RockyRoad";
+    font-weight: lighter;
+    text-align: center;
+    
+}
+header{
+    background-color: black;
+    margin-top: -20px;
+    
+}
+
+#conteneur a {
+    color: darkgoldenrod;
+    font-size: 80px;
+    text-decoration:none;
+    
+}
+
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+ }
+
+
+#menu li {
+    display: inline-block;
+    position: relative;
+    background-color:darkgoldenrod;
+   
+ }
+#menu a {
+    display:inline-block;
+    width:160px;
+    height: 30px;
+    line-height: 30px;
+    padding:3px 10px;
+    text-align: center;
+    font-size: 35px;
+    
+    color: darkgoldenrod;
+    font-family: "RockyRoad";
+    background: black;
+ }
+
+nav > ul::after {
+    content: "";
+    display: block;
+	clear: both;
+}
+
+#conteneur li:hover #sousMenu {
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    z-index: 100;
+ }
+
+#sousMenu {
+    display: none;
+}
+
+#menu ul a {
+    display: block;
+}
+
+#galeriephoto {
+  float:left;
+  padding-right:45px;
+}
+div#tout {
+  display:inline-block;
+margin:25px;
+    padding:25px;
+}
+
+h1,p {
+    color:white;
+}
+
+#navigation li a img {
+  border-radius: 7px;
+  border-style: solid;
+  border-color: black;
+}
+
+img:hover {
+  transform: scale(1.4);
+  transition: .3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+#navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contenu li {
+  padding: 0;
+  margin: 0;
+}
+
+#photo1 {
+  height: 140px;
+  width: 235px;
+}
+
+#photo2 {
+  height: 140px;
+  width: 150px;
+  margin-left: 250px;
+}
+
+#photo3 {
+  height: 230px;
+  width: 400px;
+  float: left;
+}
+
+#photo1,#photo2 #photo3 {
+  position: absolute;
+  display: block;
+}
+
+#galerievideo {
+  float:left;
+}
+
+      
+      </style>
+    <title>Galerie</title>
+  </head>
+
+  <body>
+       <div id="conteneur">    
+    <h1 id="titre"><a href="page/Accueil.html" title="Le Site des Fans de Johnny Hallyday - Accueil"><span>Johnny Hallyday</span></a></h1>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="page/Accueil.html">Accueil</a></li>
+          <li><a href="page/Galerie.html">Galerie</a>
+     
+        <ul id="sousMenu">
+            <li><a href="page/Images.html">Images</a></li>
+            <li><a href="page/Vidéos.html">Vidéos</a></li>
+        </ul> </li>
+       
+            <li><a href="page/Contact.html">Contact</a></li>
+            <li><a href="page/Parole.html">Paroles</a></li>
+            <li><a href="page/Lequipe.html">L'équipe</a></li>
+        </ul>
+    </nav>
+</div>
+  <div id="tout">
+    
+    <div id="galeriephoto">
+      <h1>
+        Des photos exclusives
+      </h1>
+      <div id="navigation">
+        <ul>
+          <li><a href="images.html"><img id="photo1" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"/></a></li>
+          <li><a href="images.html"><img id="photo2" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"/></a></li>
+          <li><a href="images.html"><img id="photo3" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"/></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="galerievideo">
+      <h1>
+        Johnny is not dead
+      </h1>
+      <div id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XZRjuRoP0l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>
+      Plus de vidéos dans la <a href="Videoshtml.html">galerie vidéo</a>.
+      </p>
+      </div>
+
+    </div>
+</div>
+  </body>
+
+
+</html>
