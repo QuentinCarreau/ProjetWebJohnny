@@ -4,7 +4,7 @@ html {
 
 @font-face {
     font-family:"RockyRoad";
-    src: url('RockyRoad.otf');
+    src: url('./RockyRoad.otf');
 }
 
 #titre {
@@ -21,7 +21,7 @@ header{
 body {
     min-height: 100%;
     position: relative;
-    background-image:url(img/background.jpg);
+    background-image:url('./img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
