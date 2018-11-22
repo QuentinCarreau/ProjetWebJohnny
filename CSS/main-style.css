@@ -34,7 +34,7 @@ footer {
     left:650px;
 }
 
-a {
+header a {
     color: darkgoldenrod;
     font-size: 80px;
     text-decoration:none;
@@ -70,7 +70,7 @@ a {
     background: black;
  }
 
-nav > ul::after {
+nav > ul:after {
     content: "";
     display: block;
 	clear: both;
@@ -90,4 +90,12 @@ li:hover #sousMenu {
 
 #menu ul a {
     display: block;
+}
+
+#monCompte a {
+    font-size: 20px;
+    float: left;
+    background-color: black;
+    color: darkgoldenrod;
+    font-family: "RockyRoad";
 }
