@@ -26,7 +26,7 @@
 header{
    
     margin-top:-42px;
-    background-color: black;
+   
     width:1000px;
    
 }
@@ -40,7 +40,7 @@ header{
 
         
 #menu{
-       text-align:center;
+            text-align:center;
         }
 
 #menu ul {
@@ -53,6 +53,7 @@ header{
 #menu li {
     display: inline-block;
     position: relative;
+    
    
  }
 #menu a {
@@ -63,9 +64,10 @@ header{
     padding:3px 10px;
     text-align: center;
     font-size: 35px;
-    
+  
     color: darkgoldenrod;
     font-family: "RockyRoad";
+    
  }
 
 nav > ul::after {
@@ -161,6 +163,11 @@ img:hover {
     color:whitesmoke;
     text-decoration: none;
         }
+        
+        #countdown {
+            float:right;
+            display:inline-block;
+        }
 
       
       </style>
@@ -176,16 +183,16 @@ img:hover {
 
         <nav>
         <ul id="menu">
-            <li><a href="./Accueil.html">Accueil</a></li>
-            <li><a href="./Galerie.html">Galerie</a>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="Galerie.html">Galerie</a>
                 <ul id="sousMenu">
-                    <li><a href="./Images.html">Images</a></li>
-                    <li><a href="./Videoshtml.html">Videos</a></li>
+                    <li><a href="images.html">Images</a></li>
+                    <li><a href="Videoshtml.html">Videos</a></li>
                 </ul> 
             </li>
-            <li><a href="./Contact.html">Contact</a></li>
-            <li><a href="./Parole.html">Paroles</a></li>
-            <li><a href="./Lequipe.html">L'equipe</a></li>
+            <li><a href="page/Contact.html">Contact</a></li>
+            <li><a href="page/Parole.html">Paroles</a></li>
+            <li><a href="page/Lequipe.html">L'equipe</a></li>
                 </ul>
         </nav>
     </div>
@@ -201,9 +208,9 @@ img:hover {
       
             <div id="navigation">
                 <ul>
-                    <li><a href="./Images.html"><img id="photo1" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"/></a></li>
-                    <li><a href="./Images.html"><img id="photo2" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"/></a></li>
-                    <li><a href="./Images.html"><img id="photo3" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"/></a></li>
+                    <li><a href="images.html"><img id="photo1" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"/></a></li>
+                    <li><a href="images.html"><img id="photo2" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"/></a></li>
+                    <li><a href="images.html"><img id="photo3" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"/></a></li>
                 </ul>
             </div>
         </div>
@@ -213,14 +220,15 @@ img:hover {
       
         <div id="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/XZRjuRoP0l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Plus de vidéos dans la <a id="lienvideo" href="./Videos.html">galerie vidéo</a>.</p>
+      <p>Plus de vidéos dans la <a id="lienvideo" href="videohtml.HTML">galerie vidéo</a>.</p>
       
         </div>
-
 
     </div>
 
 </div>
+      <iframe id="countdown" width="350" height="180" src="https://w2.countingdownto.com/2323674" frameborder="0"></iframe>
+
       
         <!-- PARTIE JUSTIN BANDEAU ACCUEIL-->
  
