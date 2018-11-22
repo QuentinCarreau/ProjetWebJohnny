@@ -7,16 +7,25 @@
         <link rel="stylesheet" type="text/css" href="CSS/main-style.css"/>
             <style type="text/css">
                 body {
-                     min-height: 100%;
-                    position: relative;
-                    background-image:url(Images/index.jpeg);
+                
+                    background-image:url(Images/index.jpeg) ;
                     background-repeat: repeat;
                     background-size: auto;
-                    text-align: center;
+                    background-position: top;
+                    background-attachment: fixed;
+                }
+                header{
+                    background-color: black;
+                    margin-top: 0px;
+
+                }
+                h1 {
+                    color: darkgoldenrod;
+                    
                 }
                 .float-right{
                     margin-right:0px;
-                    margin-top: 30px;
+                    margin-top: 110px;
                     padding: 20px;
                  
                 }
@@ -33,16 +42,28 @@
                     background-color: rgba(235, 233,233, 0.2);
                     padding: 10px;
                 }
-                h1 {
+                
+                
+                #menu a {
+                    display:inline-block;
+                    width:160px;
+                    height: auto;
+                    padding:3px 10px;
+                    text-align: center;
+                    font-size: 35px;
                     color: darkgoldenrod;
-                    font-size: 50px; 
-                }
+                    font-family: "RockyRoad";
+                    background: black;
+                            }
             </style>
     </head>
 <body>
     <header>  
 
-  <div id="conteneur">    
+  <div id="conteneur">  
+      <div id="monCompte">
+        <a href="MonCompte.html">Connexion | Inscription</a>
+      </div>
     <h1 id="titre"><a><span>Johnny Hallyday</span></a></h1>
 
     <nav>
@@ -51,7 +72,7 @@
           <li><a href="Galerie.html">Galerie</a>
      
         <ul id="sousMenu">
-            <li><a href="pImages.html">Images</a></li>
+            <li><a href="Images.html">Images</a></li>
             <li><a href="Videoshtml.html">Videos</a></li>
         </ul> </li>
        
