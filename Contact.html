@@ -4,60 +4,68 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <title>Le Site des Fans de Johnny Hallyday</title>
-        <link rel="stylesheet" type="text/css" href="contact.css"/>
-        <style type="text/css">
-                .float-right{
-                    margin-right:75px;
-                    margin-top: 100px;
-                    padding: 20px;
+        <link rel="stylesheet" type="text/css" href="CSS/main-style.css"/>
+            <style type="text/css">
+                body {
+                     min-height: 100%;
+                    position: relative;
+                    background-image:url(Images/index.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: auto;
                     text-align: center;
-                    border: solid 1px grey;
-                    border-radius: 30px;
-                    background-color: rgba(235, 233,233, 0.2);
-
+                }
+                .float-right{
+                    margin-right:0px;
+                    margin-top: 30px;
+                    padding: 20px;
+                 
                 }
                 address{
                     color: aliceblue;
                 }
                 .float-left{
                     margin-left: 50px;
-                    margin-top: 150px;
+                    margin-top: 80px;
                     text-align: center;
+                    text-align: center;
+                    border: solid 1px grey;
+                    border-radius: 30px;
+                    background-color: rgba(235, 233,233, 0.2);
+                    padding: 10px;
                 }
-        
-               
                 h1 {
                     color: darkgoldenrod;
+                    font-size: 50px; 
                 }
-
-        </style>
+            </style>
     </head>
 <body>
     <header>  
 
   <div id="conteneur">    
-    <h1 id="titre"><a href="page/Accueil.html" title="Le Site des Fans de Johnny Hallyday - Accueil"><span>Johnny Hallyday</span></a></h1>
+    <h1 id="titre"><a><span>Johnny Hallyday</span></a></h1>
 
     <nav>
         <ul id="menu">
-            <li><a href="page/Accueil.html">Accueil</a></li>
-          <li><a href="page/Galerie.html">Galerie</a>
+            <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Galerie.html">Galerie</a>
      
         <ul id="sousMenu">
-            <li><a href="page/Images.html">Images</a></li>
-            <li><a href="page/Vidéos.html">Vidéos</a></li>
+            <li><a href="pImages.html">Images</a></li>
+            <li><a href="Videoshtml.html">Videos</a></li>
         </ul> </li>
        
-            <li><a href="page/Contact.html">Contact</a></li>
-            <li><a href="page/Parole.html">Paroles</a></li>
-            <li><a href="page/Lequipe.html">L'équipe</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Parole.html">Paroles</a></li>
+            <li><a href="Lequipe.html">L'Equipe</a></li>
         </ul>
     </nav>
 </div>
 </header> 
-<form>
     <div class="container">
-  <div class="float-right">
+        
+<form>
+  <div class="float-left">
        <h1>Contactez-Nous !!</h1><br><br>
       
     <input type="text" class="col-" placeholder="Nom" maxlength="10"  required><br><br><br>
@@ -75,22 +83,23 @@
     </div>
   </div>
         
-     <div class="float-left">
-         <img src="image_preview.png" width="150" height="150"><br><br>
+     <div class="float-right">
+         <img src="Images/image_preview.png" width="150" height="150"><br><br>
          <address> Cimetière-Plage de Lorient,<br>
              97133 Saint-Barthélemy<br> MadameIrma@hautdelà.com </address><br>
         <a href="https://www.facebook.com/jhofficiel/">
-            <img src="facebook.png"  alt="facebook" width="75" height="75"> </a><br><br>
+            <img src="Images/facebook.png"  alt="facebook" width="75" height="75"> </a><br><br>
          <a href="https://twitter.com/johnnysjh">
-            <img src="Twitter.png" alt="twitter" width="75" height="75"> </a><br><br>
+            <img src="Images/Twitter.png" alt="twitter" width="75" height="75"> </a><br><br>
          <a href="#">
-             <img src="don.png" alt="don" width="400" height="200"></a>
+             <img src="Images/don.png" alt="don" width="400" height="200"></a>
     
-         
         </div>  
     
- </div>
-    </form>
-    <footer>Site dédié à notre Dieu - RIP Johnny ✝</footer>
+</form>
+  
+    
+    </div>
+        
     </body>
 </html>
