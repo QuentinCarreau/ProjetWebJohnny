@@ -2,175 +2,7 @@
 
   <head>
     <meta charset="utf-8">
-    <style>
-      
-  body {
-    background-image: url("https://images.sudouest.fr/2018/03/15/5aa9597e66a4bdb57580a0ed/widescreen/1000x500/ce-jeudi-premier-episode-judiciaire-autour-de-l-heritage-de-johnny-hallyday.jpg");
-    background-size: cover;
-    
-
-}
-    @font-face {
-    font-family:"RockyRoad";
-    src: url('./CSS/RockyRoad.otf');
-}
-        
-#titre {
-    font-family: "RockyRoad";
-    font-weight: lighter;
-    text-align: center;
-    font-size: 400%;
-    color: darkgoldenrod;
- 
-}
-header{
-   
-    margin-top:-42px;
-   
-    width:1000px;
-   
-}
-
-#conteneur a {
-    color: darkgoldenrod;
-    font-size: 80px;
-    text-decoration:none;
-}
-        
-
-        
-#menu{
-            text-align:center;
-        }
-
-#menu ul {
-    margin:0;
-    padding:0;
-    list-style-type:none;
- }
-
-
-#menu li {
-    display: inline-block;
-    position: relative;
-    
-   
- }
-#menu a {
-    display:inline-block;
-    width:160px;
-    height: 30px;
-    line-height: 30px;
-    padding:3px 10px;
-    text-align: center;
-    font-size: 35px;
-  
-    color: darkgoldenrod;
-    font-family: "RockyRoad";
-    
- }
-
-nav > ul::after {
-    content: "";
-    display: block;
-	clear: both;
-}
-
-#conteneur li:hover #sousMenu {
-    display: block;
-    position: absolute;
-    top: 36px;
-    left: 0px;
-    z-index: 100;
- }
-
-#sousMenu {
-    display: none;
-}
-
-#menu ul a {
-    display: block;
-}
-
-/*CSS MADELINE*/
-
-
-#galeriephoto {
-  float:left;
-  padding-right:45px;
-}
-div#tout {
-  display:inline-block;
-
-    padding:25px;
-}
-
-h1,p {
-    color:darkgoldenrod;
-    
-}
-
-#navigation li a img {
-  border-radius: 7px;
-  border-style: solid;
-  border-color: black;
-}
-
-img:hover {
-  transform: scale(1.4);
-  transition: .3s ease-in-out;
-  filter: grayscale(100%);
-}
-
-#navigation ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#contenu li {
-  padding: 0;
-  margin: 0;
-}
-
-#photo1 {
-  height: 140px;
-  width: 235px;
-}
-
-#photo2 {
-  height: 140px;
-  width: 150px;
-  margin-left: 250px;
-}
-
-#photo3 {
-  height: 230px;
-  width: 400px;
-  float: left;
-}
-
-#photo1,#photo2 #photo3 {
-  position: absolute;
-  display: block;
-}
-
-#galerievideo {
-  float:left;
-}
-        
-#lienvideo {
-    color:whitesmoke;
-    text-decoration: none;
-        }
-        
-        #countdown {
-            float:right;
-            display:inline-block;
-        }
-
-      
-      </style>
+  <link rel="stylesheet" type="text/css" href="styleGalerie.css"/>
     <title>Galerie</title>
   </head>
 
@@ -186,8 +18,8 @@ img:hover {
             <li><a href="Accueil.html">Accueil</a></li>
             <li><a href="Galerie.html">Galerie</a>
                 <ul id="sousMenu">
-                    <li><a href="./Images.html">Images</a></li>
-                    <li><a href="./Videos.html">Videos</a></li>
+                    <li><a href="images.html">Images</a></li>
+                    <li><a href="Videoshtml.html">Videos</a></li>
                 </ul> 
             </li>
             <li><a href="page/Contact.html">Contact</a></li>
@@ -196,43 +28,101 @@ img:hover {
                 </ul>
         </nav>
     </div>
-   </header>
-           <!-- PARTIE JUSTIN BANDEAU ACCUEIL-->
+      </header>
+           <!-- FIN PARTIE JUSTIN BANDEAU ACCUEIL-->
       
           <!-- PARTIE MADELINE-->
  
     <div id="tout">
-    
-        <div id="galeriephoto">
-            <h1>Des photos exclusives</h1>
+        <div class="galeriephoto"> 
+        <h1><a href="Images.html">Des photos exclusives</a></h1>
       
-            <div id="navigation">
-                <ul>
-                    <li><a href="images.html"><img id="photo1" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg"/></a></li>
-                    <li><a href="images.html"><img id="photo2" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg"/></a></li>
-                    <li><a href="images.html"><img id="photo3" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg"/></a></li>
-                </ul>
+           <img class ="mySlides" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg">
+         
+            <img class ="mySlides" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg">
+          <img class ="mySlides" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg">
+           <img class ="mySlides" src="https://www.causeur.fr/wp-content/uploads/2017/12/johnny-hallyday-mort-deces-disparition.jpg">
+        
+          <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="right" onclick="plusDivs(+1)">&#10095;</button>
+            
+    
             </div>
-        </div>
+     
 
     <div id="galerievideo">
-      <h1>Johnny is not dead</h1>
+      <h1><a href="Videos.html">Toutes les vidéos de Johnny</a></h1>
       
         <div id="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/XZRjuRoP0l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Plus de vidéos dans la <a id="lienvideo" href="./Videos.html">galerie vidéo</a>.</p>
-      
+
+    
         </div>
 
     </div>
 
 </div>
-      <iframe id="countdown" width="350" height="180" src="https://w2.countingdownto.com/2323674" frameborder="0"></iframe>
+ <div id="countdown">
+     <h1>Résurrection de Johnny</h1>
+     <p id="demo"></p>
+      </div>     
 
       
         <!-- PARTIE JUSTIN BANDEAU ACCUEIL-->
  
 </body>
 
+<script type="text/javascript">
+    
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    
+    x[slideIndex-1].style.display = "block";
+      
+}
+    
+   
+var countDownDate = new Date("Dec 25, 2018 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+    
+    </script>
 </html>
