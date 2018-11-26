@@ -1,0 +1,143 @@
+body {
+    background-image: url("https://images.sudouest.fr/2018/03/15/5aa9597e66a4bdb57580a0ed/widescreen/1000x500/ce-jeudi-premier-episode-judiciaire-autour-de-l-heritage-de-johnny-hallyday.jpg");
+    background-size: cover;
+
+}
+
+/*CSS JUSTIN */
+
+    @font-face {
+    font-family:"RockyRoad";
+    src: url('RockyRoad.otf');
+}
+        
+#titre {
+    font-family: "RockyRoad";
+    font-weight: lighter;
+    text-align: center;
+    font-size: 600%;
+    color: darkgoldenrod;
+ 
+}
+header{
+   
+    margin-top:-42px;
+   
+    width:1000px;
+   
+}
+
+#conteneur a {
+    color: darkgoldenrod;
+    font-size: 80px;
+    text-decoration:none;
+}
+        
+#menu{
+            text-align:center;
+        }
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+ }
+
+
+#menu li {
+    display: inline-block;
+    position: relative;
+    
+   
+ }
+#menu a {
+    display:inline-block;
+    width:160px;
+    height: 30px;
+    line-height: 30px;
+    padding:3px 10px;
+    text-align: center;
+    font-size: 35px;
+  
+    color: darkgoldenrod;
+    font-family: "RockyRoad";
+    background-color: black;
+    
+ }
+
+nav > ul::after {
+    content: "";
+    display: block;
+	clear: both;
+}
+
+#conteneur li:hover #sousMenu {
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    z-index: 100;
+ }
+
+#sousMenu {
+    display: none;
+}
+
+#menu ul a {
+    display: block;
+}
+
+
+/*CSS MADELINE*/
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+    color:white;
+}
+
+a {
+    color:darkgoldenrod;
+    text-decoration:none;
+}
+
+a:hover{
+    color:aliceblue;
+}
+h1 {
+    color:darkgoldenrod;
+    
+}
+.galeriephoto {
+    float:left;
+    display: inline-block;
+    padding-right:25px;
+}
+
+.mySlides {
+    height:352px;
+    width:470px;
+   ;
+}
+#countdown {
+    float:right;
+    color:white;
+    background-color:hotpink;
+    width:500px;
+    margin-top: -150px;
+    border-radius: 15px;
+    text-align:center;
+    height:150px;
+   
+}
+
+
+/*img:hover {
+  transform: scale(1.4);
+  transition: .3s ease-in-out;
+  filter: grayscale(100%);
+}*/
+
+#galerievideo {
+    float:left;
+}
