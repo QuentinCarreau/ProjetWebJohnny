@@ -2,7 +2,10 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <title>Le Site des Fans de Johnny Hallyday</title>
         <link rel="stylesheet" type="text/css" href="./CSS/main-style.css"/>
             <style type="text/css">
@@ -22,6 +25,9 @@
                 h1 {
                     color: darkgoldenrod;
                     
+                }
+                h5 {
+                    text-align: center;
                 }
                 .float-right{
                     margin-right:0px;
@@ -85,36 +91,91 @@
 </header> 
     <div class="container">
         
-<form>
+ <form method="post"  action="mailto:MadameIrma@hautdelà.com"enctype="text/plain" name="formulaire" onSubmit="return valider();"> 
   <div class="float-left">
        <h1>Contactez-Nous !!</h1><br><br>
       
-    <input type="text" class="col-" placeholder="Nom" maxlength="10"  required><br><br><br>
+    <input type="text" name="nom" class="col-" placeholder="Nom" maxlength="10"  required><br><br><br>
     <div class="col-">
-      <input type="text" class="col-" placeholder="Prenom" maxlength="10" required ><br><br><br>
+      <input type="text" name="prenom" class="col-" placeholder="Prenom" maxlength="10" required ><br><br><br>
     </div>
     <div class="col-">
-    <input type="email" class="col-" placeholder="Email" required ><br><br><br>
+    <input type="email" name="email" class="col-" placeholder="Email" required ><br><br><br>
     </div>
         <div class="col-">
-     <textarea maxlength="400" placeholder="Votre message : " rows="12"></textarea><br><br>
+     <textarea maxlength="400" name="message" placeholder="Votre message : " rows="12"></textarea><br><br>
     </div>
          <div class="col-">
-    <input type="submit" class="col-" value="envoyer"><br><br>
+    <input type="submit" id="envoyer" class="col-" value="envoyer" onclick="valider()"><br><br>
     </div>
   </div>
         
      <div class="float-right">
-         <img src="./Images/image_preview.png" width="150" height="150"><br><br>
-         <address> Cimetière-Plage de Lorient,<br>
-             97133 Saint-Barthélemy<br> MadameIrma@hautdelà.com </address><br>
-        <a href="https://www.facebook.com/jhofficiel/">
-            <img src="Images/facebook.png"  alt="facebook" width="75" height="75"> </a><br><br>
-         <a href="https://twitter.com/johnnysjh">
-            <img src="./Images/Twitter.png" alt="twitter" width="75" height="75"> </a><br><br>
-         <a href="#">
-             <img src="./Images/don.png" alt="don" width="400" height="200"></a>
-    
+         <img src="Images/image_preview.png" width="150" height="150"><br><br>
+                    <address> Cimetière-Plage de Lorient,<br>
+                     97133 Saint-Barthélemy<br> MadameIrma@hautdelà.com 
+                    </address><br>
+            <a href="https://www.facebook.com/jhofficiel/">
+                    <img src="Images/facebook.png"  alt="facebook" width="75" height="75"> 
+                    </a><br><br>
+                <a href="https://twitter.com/johnnysjh">
+                        <img src="Images/Twitter.png" alt="twitter" width="75" height="75"> 
+         </a><br><br><br><br>
+
+         
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Faire un Don</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+            <img src="Images/don.png" alt="twitter" width="450" height="150"> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Type de Carte</label>
+            <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Visa</option>
+                    <option value="1">Master card</option>
+                    <option value="2">Electron</option>
+              </select>
+            <label for="recipoent-name" class="col-form-label">Numéro de carte :</label>
+            <input type="text" class="form-control" id="recipient-name">
+              <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Date d'expiration :</label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>01</option>
+                            <option value="1">02</option>
+                            <option value="2">03</option>
+                            <option value="3">04</option>
+                            <option value="4">05</option>
+                            <option value="5">06</option>
+                            <option value="6">07</option>
+                            <option value="7">08</option>
+                            <option value="8">09</option>
+                            <option value="9">10</option>
+                            <option value="10">11</option>
+                            <option value="11">12</option>
+                          </select> 
+               <label for="recipoent-name" class="col-form-label">Code de sécurité :</label>
+            <input type="text" class="form-control" id="recipient-name">
+              
+              
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+         
         </div>  
     
 </form>
@@ -123,4 +184,36 @@
     </div>
         
     </body>
+    
+    <script type="text/javascript">
+    function valider() {
+        
+   if (document.formulaire.nom.value.length < 1)
+   {
+      alert("entrez votre nom");
+      document.formulaire.nom.focus();
+      return false;
+   }
+    if (document.formulaire.prenom.value.length < 1)
+   {
+      alert("entrez votre prenom");
+      document.formulaire.prenom.focus();
+      return false;
+   }
+   if (document.formulaire.email.value.length < 1)
+   {
+      alert("entrez votre email");
+      document.formulaire.email.focus();
+      return false;
+   }
+    if (document.formulaire.message.value.length < 1)
+   {
+      alert("entrez votre message");
+      document.formulaire.message.focus();
+      return false;
+   }
+ 
+  
+}
+    </script>
 </html>
