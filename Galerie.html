@@ -1,1 +1,128 @@
+<html>
 
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./CSS/styleGalerie.css"/>
+    <title>Galerie</title>
+  </head>
+
+  <body>
+    <!-- PARTIE JUSTIN BANDEAU ACCUEIL-->
+      
+    <header>
+    <div id="conteneur">    
+        <h1 id="titre">Johnny Hallyday</h1>
+
+        <nav>
+        <ul id="menu">
+            <li><a href="./Accueil.html">Accueil</a></li>
+            <li><a href="./Galerie.html">Galerie</a>
+                <ul id="sousMenu">
+                    <li><a href="images.html">Images</a></li>
+                    <li><a href="Videoshtml.html">Videos</a></li>
+                </ul> 
+            </li>
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./Parole.html">Paroles</a></li>
+            <li><a href="./Lequipe.html">L'equipe</a></li>
+                </ul>
+        </nav>
+    </div>
+      </header>
+           <!-- FIN PARTIE JUSTIN BANDEAU ACCUEIL-->
+      
+          <!-- PARTIE MADELINE-->
+ 
+    <div id="tout">
+        <div class="galeriephoto"> 
+        <h1><a href="Images.html">Des photos exclusives</a></h1>
+      
+           <img class ="mySlides" src="http://static1.purepeople.com/articles/1/16/24/11/@/1877980-exclusif-johnny-hallyday-sur-scene-opengraph_1200-3.jpg">
+         
+            <img class ="mySlides" src="http://s.plurielles.fr/mmdia/i/17/2/johnny-hallyday-sur-scene-en-1992-2826172jqlxi.jpg">
+          <img class ="mySlides" src="http://i.f1g.fr/media/ext/orig/www.lefigaro.fr/medias/2012/06/11/8a31df2e-b3d6-11e1-a08d-452946778c1d-493x328.jpg">
+           <img class ="mySlides" src="https://www.causeur.fr/wp-content/uploads/2017/12/johnny-hallyday-mort-deces-disparition.jpg">
+        
+          <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="right" onclick="plusDivs(+1)">&#10095;</button>
+            
+    
+            </div>
+     
+
+    <div id="galerievideo">
+      <h1><a href="Videos.html">Toutes les vidéos de Johnny</a></h1>
+      
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XZRjuRoP0l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+        </div>
+
+    </div>
+
+</div>
+ <div id="countdown">
+     <h1>Résurrection de Johnny</h1>
+     <p id="demo"></p>
+      </div>     
+
+      
+        <!-- PARTIE JUSTIN BANDEAU ACCUEIL-->
+ 
+</body>
+
+<script type="text/javascript">
+    
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    
+    x[slideIndex-1].style.display = "block";
+      
+}
+    
+   
+var countDownDate = new Date("Dec 25, 2018 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+    
+    </script>
+</html>

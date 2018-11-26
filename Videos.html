@@ -1,1 +1,166 @@
+<!DOCTYPE html">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="./CSS/main-style.css"/>
+    <title>Le Site des Fans de Johnny Hallyday</title>
+      <style>
+      html {
+    height: 100%;
+}
 
+@font-face {
+    font-family:"RockyRoad";
+    src: url('./CSS/RockyRoad.otf');
+}
+
+#titre {
+    font-family: "RockyRoad";
+    font-weight: lighter;
+    
+}
+header{
+    background-color: black;
+    margin-top: -20px;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    background-image:url('./Images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+}
+footer {
+    
+    color: white;
+    position: absolute;
+    bottom:0;
+    left:650px;
+}
+
+header a {
+    color: darkgoldenrod;
+    font-size: 80px;
+    text-decoration:none;
+}
+
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+ }
+
+
+#menu li {
+    display: inline-block;
+    position: relative;
+   
+    background-color:darkgoldenrod;
+   
+ }
+#menu a {
+    display:inline-block;
+    width:160px;
+    height: 30px;
+    line-height: 30px;
+    padding:3px 10px;
+    text-align: center;
+    font-size: 35px;
+    
+    color: darkgoldenrod;
+    font-family: "RockyRoad";
+    background: black;
+ }
+
+nav > ul::after {
+    content: "";
+    display: block;
+	clear: both;
+}
+
+li:hover #sousMenu {
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    z-index: 100;
+ }
+
+#sousMenu {
+    display: none;
+}
+
+#menu ul a {
+    display: block;
+}
+
+#monCompte a {
+    font-size: 20px;
+    float: right;
+    margin-top:20px;
+    color: darkgoldenrod;
+    font-family: "RockyRoad";
+}
+      </style>
+  </head>
+  
+  <body>
+    <header>  
+
+  <div id="conteneur">        
+      <div id="monCompte">
+        <a href="./MonCompte_connexion.html">Connexion | Mon Compte</a>
+      </div>
+      
+    <h1 id="titre"><a href="./Accueil.html" title="Le Site des Fans de Johnny Hallyday - Accueil"><span style="padding-left:250px">Johnny Hallyday</span></a></h1>
+      
+    <nav>
+        <ul id="menu">
+            <li><a href="./Accueil.html">Accueil</a></li>
+          <li><a href="./Galerie.html">Galerie</a>
+     
+        <ul id="sousMenu">
+            <li><a href="./Images.html">Images</a></li>
+            <li><a href="./Videos.html">Videos</a></li>
+        </ul> </li>
+       
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./Parole.html">Paroles</a></li>
+            <li><a href="./Lequipe.html">L'equipe</a></li>
+        </ul>
+    </nav>
+</div>
+      </header>        
+     
+      <div id="videos">
+          <p style="color:darkgoldenrod"><strong>Johnny Hallyday - Pardonne-moi</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XTzCVNn1OQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <p style="color:darkgoldenrod"><strong>Johnny Hallyday - Je te promets</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-TkrMyXYbik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <p style="color:darkgoldenrod"><strong>Johnny Hallyday - Vivre Pour Le Meilleur</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Xs-_NZ0LhrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <p style="color:darkgoldenrod"><strong>Johnny Hallyday - Quelque chose de Tennessee</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8Sc4Pb7d1Nk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <p style="color:darkgoldenrod"><strong>Johnny Hallyday - Allumer Le Feu</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/s3O1Xro7oAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <p style="color:darkgoldenrod"><strong>Johnny Hallyday - Laura</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/prgsiq1Z8wM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <p style="color:darkgoldenrod"><strong>Johnny Hallyday - Ma Gueule</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9ULK7C6iZjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <p style="color:darkgoldenrod"><strong>Johnny Hallyday - Je serai là (Live au Parc des princes, Paris / 1993)</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RfeESr5-7Fg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <footer style="text-align:right;color:darkgoldenrod">Site dédié à votre Dieu - RIP Johnny ✝</footer>
+      </div>
+    </body>   
+</html>

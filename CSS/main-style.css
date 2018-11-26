@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family:"RockyRoad";
+    src: url('./RockyRoad.otf');
+}
+
+#titre {
+    font-family: "RockyRoad";
+    font-weight: lighter;
+    
+}
+header{
+    background-color: black;
+    margin-top: -20px;
+    
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    background-image:url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+footer {
+    
+    color: white;
+    position: absolute;
+    bottom:0;
+    left:650px;
+}
+
+header a {
+    color: darkgoldenrod;
+    font-size: 80px;
+    text-decoration:none;
+    
+}
+
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+ }
+
+
+#menu li {
+    display: inline-block;
+    position: relative;
+   
+    background-color:darkgoldenrod;
+   
+ }
+#menu a {
+    display:inline-block;
+    width:160px;
+    height: 30px;
+    line-height: 30px;
+    padding:3px 10px;
+    text-align: center;
+    font-size: 35px;
+    
+    color: darkgoldenrod;
+    font-family: "RockyRoad";
+    background: black;
+ }
+
+nav > ul:after {
+    content: "";
+    display: block;
+	clear: both;
+}
+
+li:hover #sousMenu {
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    z-index: 100;
+ }
+
+#sousMenu {
+    display: none;
+}
+
+#menu ul a {
+    display: block;
+}
+
+#monCompte a {
+    font-size: 20px;
+    float: left;
+    background-color: black;
+    color: darkgoldenrod;
+    font-family: "RockyRoad";
+}

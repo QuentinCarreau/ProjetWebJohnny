@@ -1,0 +1,157 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Mon Compte</title>
+        <style>
+        body {
+    background-image:url('./Images/johnny-hallyday-les-jeunes-annees-photo-9.jpg');
+
+#intro {
+    margin: 5px 5px 10px 5px;
+    padding: 10px 10px 10px 10px;    
+}
+
+#intro p {
+    text-align: center;
+    font-size: 20px;
+    font-family:"Courrier monospace";
+    color:white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family:"Courrier monospace";
+    color:white;  
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family:"Courrier monospace";
+    color:white;  
+    padding: 0px;
+    margin: 8px;
+}
+
+#conteneur {
+    margin: 0px 80px 0px 80px;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Fromulaire */
+
+#espace {
+    height:20px;
+}
+
+#connexion,#inscription {
+    margin: 5px 420px 5px 420px;
+    padding: 10px 10px 10px 10px;    
+    border: 3px solid rgba(61, 61, 61);
+    border-radius: 20px;
+    background-color:rgba(61, 61, 61, 0.5); 
+}
+
+#connexion .col ,#inscription .col {
+    margin : 10px 0px 0px 130px;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid rgba(61, 61, 61);
+    background-color: rgba(135, 135, 135);
+    color:white;
+    font-size:17px;    
+}
+
+#connexion .col:focus, #inscription .col:focus{
+    border: 2px solid #008098;
+    box-shadow: 0 0 3px 2px #008098;
+}
+
+::placeholder {
+    color: rgba(189,189,189);
+    padding-left: 10px;
+    font-size:20px;
+}
+
+/* Bouton d'inscription */
+
+#btn_connexion {
+    width:300px;
+    height: 35px;
+    margin : 20px 0px 0px 130px;
+    border-radius:6px; 
+    border: 2px solid rgba(61, 61, 61);
+    font-size: 20px;
+    color: white;
+    background-color: #F77900;
+    font-weight: bold;
+    font-family: "Courrier monospace";   
+}
+
+#btn_inscription {
+    width: 300px;
+    height: 35px;
+    margin : 20px 0px 0px 130px;
+    border-radius:6px; 
+    border: 2px solid rgba(61, 61, 61);
+    font-size: 20px;
+    color: white;
+    background-color: #F77900;
+    font-weight: bold;
+    font-family: "Courrier monospace";   
+}
+
+#btn_connexion:hover, #btn_inscription:hover{
+    background-color: #008098;
+}
+
+#btn_inscription a{
+    text-decoration: none;
+    color:white;
+}
+
+#form_connexion p {
+    color:white;
+    font-family: "Courrier monospace";
+    font-size:25px;
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    
+}
+
+        </style>
+    </head>
+    
+    <body>
+    <div id="conteneur">   
+        <div id="intro">
+            <h1>Connexion / Inscription</h1>
+        </div> 
+        <div id="connexion">
+            <form id="form_connexion">
+
+                <input class="col" id="pseudo" type="text" placeholder="Pseudo" required><br/>
+                <input class="col" id="mdp" type="password" placeholder="Mot de passe" required><br/>
+                <input id="btn_connexion" type="submit" value="SE CONNECTER" onclick="connexion()">
+                <p>- ou -</p>
+                <input type=button id="btn_inscription" onclick="window.location.href='monCompte_inscription.html';" value="S'INSCRIRE" /> 
+            </form> 
+        </div>
+      
+    </div>
+    </body>
+     
+    <script>
+        function connexion(){
+            var prenom = document.getElementsByName("pseudo");
+            var mdp = document.getElementsByName("mdp");
+        }
+    </script>  
+           
+    
+</html>
+
+  

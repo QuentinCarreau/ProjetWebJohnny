@@ -1,1 +1,78 @@
+<!DOCTYPE html">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="CSS/main-style.css" />
+      <link rel="stylesheet" type="text/css" href="CSS/Calendrier.css" />
 
+    <script type="text/javascript" src="Calendrier.js"></script>
+
+    <title>Le Site des Fans de Johnny Hallyday</title>
+  <style>
+      body {
+    min-height: 100%;
+    position: relative;
+    background-image:url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}</style>
+    </head>
+  
+  <body>
+    <header>  
+
+  <div id="conteneur">    
+      <div id="monCompte">
+        <a href="MonCompte_connexion.html">Connexion | Inscription</a>
+      </div>
+      <h1 id="titre">
+       
+        <a href="Accueil.html" title="Le Site des Fans de Johnny Hallyday - Accueil"><span>Johnny Hallyday</span></a></h1>
+      
+
+    <nav>
+        <ul id="menu">
+            <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Galerie.html">Galerie</a>
+     
+        <ul id="sousMenu">
+            <li><a href="Images.html">Images</a></li>
+            <li><a href="Videos.html">Videos</a></li>
+        </ul> </li>
+       
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Parole.html">Paroles</a></li>
+            <li><a href="Lequipe.html">L'equipe</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+    
+<div id="calendarMain" class="calendarMain"></div>
+<script type="text/javascript">
+//<![CDATA[
+var myCalendar = new jsSimpleDatePickr();
+myCalendar.CalAdd({
+'divId': 'calendarMain',
+'dateMask': 'JJ/MM/AAAA',
+'dateCentury': 20,
+'titleMask': 'M AAAA',
+'navType': '01',
+'classTable': 'jsCalendar',
+'classDay': 'day',
+'classDaySelected': 'selectedDay',
+'monthLst': ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+'dayLst': ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+'hideOnClick': false,
+'showOnLaunch': true
+});
+//]]>
+</script>  
+      
+      
+
+    <footer>Site dédié à notre Dieu - RIP Johnny ✝</footer>
+  
+    </body>   
+</html>

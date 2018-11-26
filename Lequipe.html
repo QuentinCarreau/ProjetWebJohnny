@@ -1,1 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    
+        
+</head>
+    <body>
+        <style>
+        body{
+    background-image: url(./Images/jhjjsjcv11112015.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -1%;
+    min-height: 100%;
+    background-attachment: fixed;
+}
 
+header{
+   margin-top: -20px;
+   
+}
+
+@font-face{
+    font-family:"RockyRoad";
+    src: url('./CSS/RockyRoad.otf');
+}
+
+#titre{
+    font-family: "RockyRoad";
+    font-weight: lighter;
+    text-align: center;
+}
+
+a{
+    color: darkgoldenrod;
+    font-size: 80px;
+    text-decoration:none;
+}
+
+#menu{
+    text-align: center;
+   
+}
+
+#menu ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+ }
+
+
+#menu li{
+    display: inline-block;
+    position: relative;
+    
+}
+
+#menu a{
+    display:inline-block;
+    width:160px;
+    height: 30px;
+    line-height: 30px;
+    padding:3px 10px;
+    text-align:center;
+    font-size: 35px;
+    color: darkgoldenrod;
+    font-family: "RockyRoad";
+    
+ }
+
+nav > ul:after{
+    content: "";
+    display: block;
+	clear: both;
+}
+
+li:hover #sousMenu{
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    z-index: 100;
+ }
+
+#sousMenu{
+    display: none;
+}
+
+#menu ul a{
+    display: block;
+}
+
+#conteneur1{
+    background-color: rgba(206,206,206,0.8);
+    padding: 3%;
+}
+
+#contenu h1{
+    text-align: center;
+    font-size: 300%;
+    color:darkgoldenrod;
+    margin-bottom: 5%;
+    border-bottom: solid;
+}
+
+#contenu p{
+    text-align: center;
+    padding-left:10%;
+    padding-right: 10%;
+    font-size: 155%;
+}
+
+
+.slideshow-container img{
+    border-right: solid;
+    border-color:darkgoldenrod;
+    padding-right:1%;
+    margin-left: 8%;
+    margin-bottom: -14%;
+    
+}
+
+h2{
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+
+
+h3{
+    color: darkgoldenrod;
+    display: none;
+}
+
+
+
+.slide{
+    display: none;            
+}
+    
+            
+            
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}            
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;  
+}
+            
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+            
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} 
+
+.slideshow-container p{
+    text-align: left;
+    margin-left: 30%;
+    padding-bottom:20%;
+    margin-bottom:             
+            }            
+
+        </style>
+    <header>      
+
+  <div id="conteneur">    
+
+    <h1 id="titre"><a href="./Accueil.html" title="Le site des fans de Johnny Hallyday-Accueil"><span>Johnny Hallyday</span></a></h1>
+
+
+    <nav>
+        <ul id="menu">
+            <li><a href="./Accueil.html">Accueil</a></li>
+            <li><a href="./Galerie.html">Galerie</a>
+        <ul id="sousMenu">
+            <li><a href="./Images.html">Images</a></li>
+            <li><a href="./Videos.html">Videos</a></li>
+        </ul></li>
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./Parole.html">Paroles</a></li>
+            <li><a href="./Lequipe.html">L'equipe</a></li>
+        </ul>
+    </nav>
+</div>        
+    </header>
+    
+    
+        <div id="conteneur1">
+        <div class="equipe" id="contenu">
+            <h1>Qui sommes nous !</h1>
+            <p>Nous sommes 8 apprentis développeurs web, web mobile, actuellement en formation au centre AFPA d'Angers, sous la direction d'un jeune et talentueux développeur full stack.
+            Tous, en pleine reconversion professionnelle, issus de corps de métier très différents les uns des autres, mais ayant la même passion du web, souhaitions, au travers de ce site web, montrer nos compétences, tout en rendant hommage à un géant de la musique. </p>
+        </div>    
+        <div class="slideshow-container">
+        <div class="equipe" id="contenu2">
+            <div class="slide">
+            <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+            <img src="./Images/telechargement.jpeg" height="150px" width="150px"><p><strong style="font-size:160%">CARREAU Quentin</strong><br><br>Age: 25 ans<br>Développeur full stack.<br>Responsable du projet "fan de johnny". Il nous supervise et nous apporte son aide en cas de besoin.</p><br>
+            </div>
+        </div>
+                    
+            <div class="slide" id="mad">
+                <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+                <br><img src="./Images/mad.jpg" height="150px" width="150px"><p><strong style="font-size:160%">PLARD Madeline</strong><br><br>Age: 28 ans<br>Apprenti développeur<br>Ancienne journaliste chez "OUEST FRANCE".<br>Responsable de l'aperçu vidéos et images sur le site "Fan de Johnny".</p><br>
+            </div>
+                      
+            <div class="slide" id="saliou">
+                <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+                <br><img src="./Images/saliou.jpg" height="150px" width="150px"><p><strong style="font-size:160%">CAMARA Mamadou Saliou</strong><br><br>Age: 34 ans<br>Apprenti développeur<br>Ancien conseiller client chez "CONCENTRIX".<br>Responsable de la page et de l'intégration des images sur le site "Fan de Johnny".</p><br>
+            </div>
+             
+        
+            <div class="slide" id="gilles">
+                <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+                <br><img src="./Images/gilles.jpg" height="150px" width="150px"><p><strong style="font-size:160%">MARTINEL GILLES</strong><br><br>Age: 30 ans<br>Apprenti développeur<br>Ancien chauffeur poids lourd.<br>Responsable de la page et de l'intégration des vidéos sur le site "Fan de Johnny".</p><br>
+            </div>
+                
+            <div class="slide" id="kevin">
+                <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+                <br><img src="./Images/kevin.JPG" height="150px" width="150px"><p><strong style="font-size:160%">MONNET Kevin</strong><br><br>Age: 24 ans<br>Apprenti développeur<br>Ancien gendarme départemental.<br>Responsable de la page "Contact" sur le site "Fan de Johnny".</p><br>
+            </div>
+                
+            <div class="slide" id="jeremy">
+                <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+                <br><img src="./Images/jeremy.jpg" height="150px" width="150px"><p><strong style="font-size:160%">BOLO Jérémy</strong><br><br>Age: 24 ans<br>Apprenti développeur<br>Ancien mécanicien automobile.<br>Responsable de la page "Paroles" sur le site "Fan de Johnny".</p><br>
+            </div>
+            
+            <div class="slide" id="jonathan">
+                <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+               <br><img src="./Images/Jonathan.jpg" height="150px" width="150px"><p><strong style="font-size:160%">DOS SANTOS DAMIAO Jonathan</strong><br><br>Age: 27 ans<br>Apprenti développeur<br>Ancien professeur d' histoire et géographie au collège de "Sainte Luce".<br>Responsable de la page "Connexion, Inscription et Mon Compte" sur le site "Fan de Johnny".</p><br>
+            </div>
+            
+            
+            <div class="slide" id="justin">
+            <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+            <br><img src="./Images/justin.png" height="150px" width="150px"><p><strong style="font-size:160%">LELIAS Justin</strong><br><br>Age: 28 ans<br>Apprenti développeur<br>Ancien responsable de magasin à "Jardinerie AUBIN LELIAS"<br>Responsable de la page "Accueil" sur le site "Fan de Johnnny". </p><br>
+            </div>
+                
+            <div class="slide" id="yo">
+                <br><h2 style="font-size: 200%">L'EQUIPE !</h2><br>
+                <br><img src="./Images/yo.jpeg" height="150px" width="150px"><p><strong style="font-size:160%">TOURNIER Yoann</strong><br><br>Age: 31 ans<br>Apprenti développeur<br>Ancien militaire au "6° Régiment du Génie" d'AngersResponsable de cette page sur le site "Fan de Johnny"</p><br>
+            </div>
+            
+            <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlide(1)">&#10095;</a>
+            </div>
+            </div>
+        <script>
+        
+var slideIndex=1;
+showSlides(slideIndex);
+            
+function plusSlide(n){
+showSlides(slideIndex += n);
+}
+        
+function currentSlide(n){
+showSlides(slideIndex = n);
+}
+            
+function showSlides(n){
+var i;
+var slider= document.getElementsByClassName("slide");
+if(n > slider.length){slideIndex = 1}
+if(n < 1) {slideIndex = slider.length}
+for(i = 0; i < slider.length; i++){
+    slider[i].style.display= "none";
+}
+slider[slideIndex-1].style.display= "block";
+}    
+</script>
+        
+        
+        
+        
+        
+        
+    </body>
