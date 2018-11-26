@@ -2,7 +2,11 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="CSS/main-style.css"/>
+      <link rel="stylesheet" type="text/css" href="CSS/main-style.css" />
+      <link rel="stylesheet" type="text/css" href="CSS/Calendrier.css" />
+
+    <script type="text/javascript" src="Calendrier.js"></script>
+
     <title>Le Site des Fans de Johnny Hallyday</title>
   <style>
       body {
@@ -43,9 +47,31 @@
         </ul>
     </nav>
 </div>
-        
-      </header> 
-             
+</header>
+    
+<div id="calendarMain" class="calendarMain"></div>
+<script type="text/javascript">
+//<![CDATA[
+var myCalendar = new jsSimpleDatePickr();
+myCalendar.CalAdd({
+'divId': 'calendarMain',
+'dateMask': 'JJ/MM/AAAA',
+'dateCentury': 20,
+'titleMask': 'M AAAA',
+'navType': '01',
+'classTable': 'jsCalendar',
+'classDay': 'day',
+'classDaySelected': 'selectedDay',
+'monthLst': ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+'dayLst': ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+'hideOnClick': false,
+'showOnLaunch': true
+});
+//]]>
+</script>  
+      
+      
+
     <footer>Site dédié à notre Dieu - RIP Johnny ✝</footer>
   
     </body>   
