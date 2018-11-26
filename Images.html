@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>La vie de JOHNNY HALLYDAY en images</title>
+    <title>La vie de <strong>JOHNNY HALLYDAY</strong> en images</title>
   <meta charset="UTF-8">
-   <link rel="stylesheet" type="text/css" href="main-style.css">
+   <link rel="stylesheet" type="text/css" href="images.css">
     <style>
         
 footer {
@@ -127,6 +127,25 @@ div#paraL p {
      
 }
         
+div#imageL img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}        
+    
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}        
+        
  #contenu #nat {
      border:200px;
             
@@ -163,7 +182,96 @@ div#imageN {
 margin-top: 50px;
 
         } 
+
+div#laura h2 {
+    font-family: cursive;
+    text-align: center;
+    border: grey 10px solid;
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 10px;
     
+        }
+    
+ div#david h2  {
+     font-family: cursive;
+    text-align: center;
+    border: grey 10px solid;
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 10px;
+            
+            
+        } 
+        
+div#paralaura p {
+    padding-left: 100px;
+   padding-right: 700px;
+    
+        }
+
+div#conteneur h1 {
+    text-align: center;
+        }        
+
+div#jadeetjoy h2 {
+    font-family: cursive;
+    text-align: center;
+    border: grey 10px solid;
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-right: 500px;
+    margin-top: 10px;
+        }
+        
+.flip-box {
+  background-color: transparent;
+  height: 300px;
+  border: 5px;
+  display: inline;
+    
+}
+
+.flip-box-inner {
+  width: 400px;
+  height: 300px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  color: black;
+  transform: rotateY(180deg);
+} 
+
+#gauche {
+    float: left;
+        } 
+ #droite {
+            float:right;
+        }        
+        
+        
+
+           
     </style>
 </head>
     
@@ -172,21 +280,21 @@ margin-top: 50px;
     <header>  
 
   <div id="conteneur">    
-    <h1 id="titre"><a href="Accueil.html" title="Le Site des Fans de Johnny Hallyday - Accueil"><span>Johnny Hallyday</span></a></h1>
+    <h1 id="titre"><a href="page/Accueil.html" title="Le Site des Fans de Johnny Hallyday - Accueil"><span>Johnny Hallyday</span></a></h1>
 
     <nav>
         <ul id="menu">
-            <li><a href="./Accueil.html">Accueil</a></li>
-          <li><a href="./Galerie.html">Galerie</a>
+            <li><a href="page/Accueil.html">Accueil</a></li>
+          <li><a href="page/Galerie.html">Galerie</a>
      
         <ul id="sousMenu">
-            <li><a href="./Images.html">Images</a></li>
-            <li><a href="./Vidéos.html">Vidéos</a></li>
+            <li><a href="page/Images.html">Images</a></li>
+            <li><a href="page/Vidéos.html">Vidéos</a></li>
         </ul> </li>
        
-            <li><a href="./Contact.html">Contact</a></li>
-            <li><a href="./Parole.html">Paroles</a></li>
-            <li><a href="./Lequipe.html">L'équipe</a></li>
+            <li><a href="page/Contact.html">Contact</a></li>
+            <li><a href="page/Parole.html">Paroles</a></li>
+            <li><a href="page/Lequipe.html">L'équipe</a></li>
         </ul>
     </nav>
 </div>
@@ -195,9 +303,35 @@ margin-top: 50px;
     <div class="titre">
     <h1> La vie de <strong>JOHNNY HALLYDAY</strong> en image</h1>
     </div>
-    <img src="./Images/Johnny.jpg" alt="johnny" border="5" width="400" height="300">
-        <img src="./Images/j.jpg" style="float: right" border="5" width="400" height="300"/>
-    <img src="./Images/j2.jpg" style="float: center" border="5" width="570" height="300"/>
+       </div>
+    
+    <div id="gauche">
+      <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+          <img src="johnny.jpg" alt="johnny" border="5" width="400" height="300">
+        </div>
+      <div class="flip-box-back">
+           <img src="sld3.jpg" alt="johnny" border="5" width="400" height="300">
+          </div>
+      </div>
+          </div>
+         </div>
+    
+    <div id="droite">
+      <div class="flip-box">
+           <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <img src="j.jpg" style="float: right" border="5" width="400" height="300"/>
+          </div>
+               <div class="flip-box-back">
+               <img src="slidej.jpg" style="float: right" border="5" width="400" heigh="572"/></div>
+               </div>
+          </div>
+        </div>
+   
+       
+    <img src="j2.jpg" style="float: center" border="5" width="550" height="300"/>
     
     <div class="titre">
          <h1>Les Femmes de sa vie </h1>
@@ -205,7 +339,7 @@ margin-top: 50px;
     <div id="sylvie">
     
     <div id="imageS">
-        <img src="./Images/sylvie.jpg" border="5" width="500" height="300"/>
+        <img src="sylvie.jpg" border="5" width="500" height="300"/>
         </div>
         <div id="paraS" >
     
@@ -231,8 +365,8 @@ margin-top: 50px;
         </div>
         
         <div id="imageL">
-        <img src="./Images/laetitia.jpg" border="5" width="400" height="300"/>
-            <img src="./Images/lat.jpg" style="float: right" border="5" width="400" height="300"/>
+        <img src="laetitia.jpg" border="5" width="400" height="300"/>
+            <img src="lat.jpg" style="float: right" border="5" width="400" height="300"/>
         </div>
         
         
@@ -246,7 +380,7 @@ margin-top: 50px;
                 </div>
             
             <div id="imageN">
-                <img src="./Images/nat.jpg" border="5" width="300" height="250"/> 
+                <img src="nat.jpg" border="5" width="300" height="250"/> 
     
                 </div>
             
@@ -259,19 +393,35 @@ margin-top: 50px;
          <h1>Les enfants de JOHNNY</h1>
     </div>
     
-    <div id="image2">
-        <h2><strong>David Hallyday</strong></h2>
-    <img src="./Images/david.jpg" border="5" width="400" height="300"/>
-        <img src="./Images/da.jpg" style="float: right" border="5" width="400" height="300"/>
-        <img src="./Images/detl.jpg" style="float: center" border="5" width="570" height="300"/><pre>
-     
+    <div id="david">
+        <div id="imagedavid">
+        <h2>David Hallyda</h2>
+    <img src="david.jpg" border="5" width="400" height="300"/>
+        <img src="da.jpg" style="float: right" border="5" width="400" height="300"/>
+        <img src="detl.jpg" style="float: center" border="5" width="570" height="300"/></div>
+        </div>
+        
+     <div id="laura">
+         <div id="paralaura">
         <h2>Laura Smet</h2>
-    <img src="./Images/laura-smet.jpeg" border="5" align="right" width="400" height="300"/>
-    
+             <p>Laura Smet est la fille du chanteur Johnny Hallyday (1943-2017) et de l'actrice Nathalie Baye (née en 1948). Elle est la demi-sœur du chanteur David Hallyday (né en 1966), de Jade Smet (née en 2004) et de Joy Smet (née en 2008).
+Laura Smet a deux parrains : le chanteur Eddy Mitchell, choisi par Johnny Hallyday, et le producteur Dominique Besnehard, choisi par Nathalie Baye1,2.
+En 1986, Johnny Hallyday enregistre en son honneur la chanson Laura, écrite et composée par Jean-Jacques Goldman.
+Laura Smet est élève au collège et lycée Victor-Duruy à Paris jusqu'en 1999. Elle suit ensuite les cours de comédie de Raymond Acquaviva</p></div>
+             <div id="imagelaura">
+    <img src="laura-smet.jpeg" border="5" align="right" width="400" height="300"/></div>
+         
+        </div>
+      
+    <div id="jadeetjoy">
+        <div id="imagejade">
         <h2>Jade & Joy Hallyday</h2>
-    <img src="./Images/jade.jpeg" border="5" width="400" height="300"/>
-    </pre>
+    <img src="jade.jpeg" border="5" width="400" height="300"/></div>
+  
     </div>
+      
+    
+        
     
             
             
