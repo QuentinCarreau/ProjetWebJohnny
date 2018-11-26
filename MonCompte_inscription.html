@@ -141,16 +141,16 @@ h2 {
             <input class="col" id="prenom" type="text" placeholder="ex: Bernard" required><br/>
             <label for="nom">Nom</label>
             <input class="col" id="nom" type="text" placeholder="ex: L'Ermite"><br/>
-            <label for="naissance">Date de naissance</label>
-            <input class="col" id="naissance" type="date" placeholder="Date de Naissance"><br/>
+            <label for="dateNaissance">Date de naissance</label>
+            <input class="col" id="dateNaissance" type="date" placeholder="Date de Naissance"><br/>
             <label for="email">Email</label>        
             <input class="col" id="email" type="email" placeholder="ex: beber59@wanadoo.fr"><br/>
             <label for="pseudo">Pseudo</label>        
             <input class="col" id="pseudo" type="text" placeholder="ex: beberBGdu59"><br/>         
             <label for="password">Mot de passe</label>
             <input class="col" id="mdp" type="password" placeholder="ex: 12345"><br/>
-            <label for="chansonPref">Chanson préférée</label>
-            <input class="col" id="chansonPref" type="text" placeholder="ex: Allumer le feu"><br/>
+            <label for="chansonPreferee">Chanson préférée</label>
+            <input class="col" id="chansonPreferee" type="text" placeholder="ex: Allumer le feu"><br/>
             <input id="btn_inscription" type="submit" value="S'INSCRIRE" onclick="inscription()">
         </form> 
     </div>
@@ -158,14 +158,30 @@ h2 {
     </body>
      
     <script>
+        import saveAs from 'file-saver';
+        
         function inscription(){
-            var prenom = document.getElementsByName("prenom");
-            var nom = document.getElementsByName("nom");
-            var naissance = document.getElementsByName("naissance");
-            var email = document.getElementsByName("email");
-            var pseudo = document.getElementsByName("pseudo");
-            var mdp = document.getElementsByName("mdp");
-            var chansonPref = mdocument.getElementsByName("chansonPref");
+            var prenom = document.getElementById("prenom");
+            var nom = document.getElementById("nom");
+            var dateNaissance = document.getElementById("dateNaissance");
+            var email = document.getElementById("email");
+            var pseudo = document.getElementById("pseudo");
+            var mdp = document.getElementById("mdp");
+            var chansonPreferee = document.getElementById("chansonPreferee");
+            
+            var nouveauMembre = {
+                prenom_: prenom.value,
+                nom_: nom.value,
+                dateNaissance_: dateNaissance.value,
+                email_: email.value,
+                pseudo_: pseudo.value,
+                mdp_: mdp.value,
+                chansonPreferee_: chansonPreferee.value
+            };
+            var nouveauMembre = JSON.stringify(nouveauMembre); 
+            
+            var blob = new Blob([nouveauMembre], {type: "text/plain;charset=utf-8"});
+            FileSaver.saveAs(blob, "testJSON.txt");
         }
     </script>  
            
